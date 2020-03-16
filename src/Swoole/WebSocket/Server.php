@@ -13,30 +13,6 @@ namespace Swoole\WebSocket;
 
 class Server extends \Swoole\Http\Server
 {
-    // todo property
-    public $setting = '???';
-    // todo property
-    public $connections = '???';
-    // todo property
-    public $host = '???';
-    // todo property
-    public $port = '???';
-    // todo property
-    public $type = '???';
-    // todo property
-    public $mode = '???';
-    // todo property
-    public $ports = '???';
-    // todo property
-    public $master_pid = '???';
-    // todo property
-    public $manager_pid = '???';
-    // todo property
-    public $worker_id = '???';
-    // todo property
-    public $taskworker = '???';
-    // todo property
-    public $worker_pid = '???';
     // todo
     static public function pack($data,$opcode = null,$flags = null){}
     // todo
