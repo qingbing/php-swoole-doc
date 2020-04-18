@@ -1,0 +1,28 @@
+{
+  "name": "qingbing/php-swoole-doc",
+  "description": "php-swoole-doc，swoole 缓存编码提示api文档",
+  "type": "library",
+  "license": "MIT",
+  "keywords": [
+    "php",
+    "swoole",
+    "doc",
+    "php-swoole",
+    "swoole-api",
+    "document"
+  ],
+  "homepage": "http://www.phpcorner.net",
+  "authors": [
+    {
+      "name": "qingbing",
+      "email": "780042175@qq.com"
+    }
+  ],
+  "require": {
+    "php": ">=7.0.0",
+    "ext-swoole": "*"
+  },
+  "autoload": {},
+  "autoload-dev": {},
+  "repositories": {}
+}
