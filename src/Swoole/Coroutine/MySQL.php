@@ -5,60 +5,159 @@
  * @User         :   qingbing<780042175@qq.com>
  * @Version      :   4.4.14
  * @Date         :   2020-03-15
-
  * @Class        :   \Swoole\Coroutine\MySQL
  * @package      :   Swoole\Coroutine
  */
+
 namespace Swoole\Coroutine;
 
 class MySQL
 {
-    // todo property
-    public $serverInfo = '???';
+    /**
+     * 连接配置信息
+     *
+     * @var array
+     */
+    public $serverInfo;
     // todo property
     public $sock = '???';
     // todo property
     public $connected = '???';
-    // todo property
-    public $connect_errno = '???';
-    // todo property
-    public $connect_error = '???';
-    // todo property
-    public $affected_rows = '???';
-    // todo property
-    public $insert_id = '???';
-    // todo property
-    public $error = '???';
-    // todo property
-    public $errno = '???';
+    /**
+     * 连接错误码
+     *
+     * @var int
+     */
+    public $connect_errno;
+    /**
+     * 连接错误消息
+     *
+     * @var string
+     */
+    public $connect_error;
+    /**
+     * 最近SQL影响的数据条数
+     *
+     * @var int
+     */
+    public $affected_rows;
+    /**
+     * 最新插入的自增ID
+     *
+     * @var int
+     */
+    public $insert_id;
+    /**
+     * SQL 执行错误消息
+     *
+     * @var string
+     */
+    public $error;
+    /**
+     * SQL 执行错误代码
+     *
+     * @var int
+     */
+    public $errno;
+
     // todo
-    public function __construct(){}
+    public function __construct()
+    {
+    }
+
     // todo
-    public function __destruct(){}
+    public function __destruct()
+    {
+    }
+
     // todo
-    public function getDefer(){}
+    public function getDefer()
+    {
+    }
+
     // todo
-    public function setDefer($defer = null){}
+    public function setDefer($defer = null)
+    {
+    }
+
+    /**
+     * 连接数据库
+     *
+     * @param null|array $server_config 数据库连接配置
+     *      $config = [
+     *           'host' => '172.16.37.128',
+     *           'user' => 'root',
+     *           'password' => 'ww111111',
+     *           'database' => 'hyperf-test',
+     *           'charset' => 'utf8',
+     *      ]
+     *
+     * @return bool
+     */
+    public function connect($server_config = null)
+    {
+        return true;
+    }
+
+    /**
+     * 数据库查询
+     *
+     * @param string $sql
+     * @param null | int $timeout
+     * @return array
+     */
+    public function query($sql, $timeout = null)
+    {
+        return [];
+    }
+
     // todo
-    public function connect($server_config = null){}
+    public function fetch()
+    {
+    }
+
     // todo
-    public function query($sql,$timeout = null){}
+    public function fetchAll()
+    {
+    }
+
     // todo
-    public function fetch(){}
+    public function nextResult()
+    {
+    }
+
     // todo
-    public function fetchAll(){}
+    public function prepare($query, $timeout = null)
+    {
+    }
+
     // todo
-    public function nextResult(){}
+    public function recv()
+    {
+    }
+
     // todo
-    public function prepare($query,$timeout = null){}
+    public function begin($timeout = null)
+    {
+    }
+
     // todo
-    public function recv(){}
+    public function commit($timeout = null)
+    {
+    }
+
     // todo
-    public function begin($timeout = null){}
-    // todo
-    public function commit($timeout = null){}
-    // todo
-    public function rollback($timeout = null){}
-    // todo
-    public function close(){}
+    public function rollback($timeout = null)
+    {
+    }
+
+    /**
+     * 关闭SQL连接
+     *
+     * @return bool
+     */
+    public function close()
+    {
+        return true;
+    }
 }

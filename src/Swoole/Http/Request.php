@@ -5,34 +5,78 @@
  * @User         :   qingbing<780042175@qq.com>
  * @Version      :   4.4.14
  * @Date         :   2020-03-15
-
  * @Class        :   \Swoole\Http\Request
  * @package      :   Swoole\Http
  */
+
 namespace Swoole\Http;
 
 class Request
 {
-    /* @var int 连接标记 */
-    public $fd = 1;
-    /* @var array header头 */
+    /**
+     * 客户端的 socket id
+     * @var int
+     */
+    public $fd;
+    /**
+     * 请求的头部信息
+     * @var array
+     */
     public $header = [];
-    /* @var array 服务器信息 */
+    /**
+     * 请求相关的服务器信息
+     * @var array
+     */
     public $server = [];
-    // todo property
-    public $cookie = '???';
-    // todo property
-    public $get = '???';
-    // todo property
-    public $files = '???';
-    // todo property
-    public $post = '???';
-    // todo property
-    public $tmpfiles = '???';
-    // todo
-    public function rawContent(){}
-    // todo
-    public function getData(){}
-    // todo
-    public function __destruct(){}
+    /**
+     * 请求携带的 COOKIE 信息，格式为键值对数组
+     * @var array
+     */
+    public $cookie = [];
+    /**
+     * Http 请求的 GET 参数, 相当于 $_GET
+     * @var array
+     */
+    public $get = [];
+    /**
+     * Http 请求的文件域
+     * @var array
+     */
+    public $files = [];
+    /**
+     * POST 参数
+     * @var array
+     */
+    public $post = [];
+    /**
+     * 文件域的临时文件
+     */
+    public $tmpfiles = [];
+
+    /**
+     * 获取原始的 POST 包体
+     *
+     * @return string
+     */
+    public function rawContent()
+    {
+        return '';
+    }
+
+    /**
+     * 获取完整的原始 Http 请求报文
+     *
+     * @return string
+     */
+    public function getData()
+    {
+        return '';
+    }
+
+    /**
+     * 魔术方法：析构函数
+     */
+    public function __destruct()
+    {
+    }
 }

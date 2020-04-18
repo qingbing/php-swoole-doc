@@ -7,9 +7,8 @@
  * Date         :   2020-03-15
  */
 /**
- * swoole
+ * 当前Swoole的版本号，字符串类型
  */
-// 当前Swoole的版本号，字符串类型
 defined('SWOOLE_VERSION') or define('SWOOLE_VERSION', '4.4.14');
 
 /**
@@ -18,7 +17,7 @@ defined('SWOOLE_VERSION') or define('SWOOLE_VERSION', '4.4.14');
 // 使用Base模式，业务代码在Reactor进程中执行
 defined('SWOOLE_BASE') or define('SWOOLE_BASE', 1);
 
-// 使用进程模式，业务代码在Worker进程中执行
+// 多进程进程模式，业务代码在Worker进程中执行
 defined('SWOOLE_PROCESS') or define('SWOOLE_PROCESS', 2);
 
 /**
@@ -62,9 +61,9 @@ defined('SWOOLE_RWLOCK') or define('SWOOLE_RWLOCK', 1);
 
 // 创建自旋锁
 defined('SWOOLE_SPINLOCK') or define('SWOOLE_SPINLOCK', 5);
-
-
-// todo get meaning
+/**
+ * Swoole 版本id
+ */
 defined('SWOOLE_VERSION_ID') or define('SWOOLE_VERSION_ID', 40414);
 
 // todo get meaning
@@ -132,6 +131,9 @@ defined('SWOOLE_SYNC') or define('SWOOLE_SYNC', 2048);
 defined('SWOOLE_ASYNC') or define('SWOOLE_ASYNC', 1024);
 
 // todo get meaning
+/**
+ *
+ */
 defined('SWOOLE_EVENT_READ') or define('SWOOLE_EVENT_READ', 512);
 
 // todo get meaning
@@ -719,31 +721,31 @@ defined('SWOOLE_TASK_PEEK') or define('SWOOLE_TASK_PEEK', 64);
 // todo get meaning
 defined('SWOOLE_TASK_NOREPLY') or define('SWOOLE_TASK_NOREPLY', 128);
 
-// todo get meaning
+// websocket 连接进入等待握手
 defined('SWOOLE_WEBSOCKET_STATUS_CONNECTION') or define('SWOOLE_WEBSOCKET_STATUS_CONNECTION', 1);
 
-// todo get meaning
+// websocket 正在握手
 defined('SWOOLE_WEBSOCKET_STATUS_HANDSHAKE') or define('SWOOLE_WEBSOCKET_STATUS_HANDSHAKE', 2);
 
-// todo get meaning
+// websocket 连接状态
 defined('SWOOLE_WEBSOCKET_STATUS_ACTIVE') or define('SWOOLE_WEBSOCKET_STATUS_ACTIVE', 3);
 
-// todo get meaning
+// websocket 连接关闭
 defined('SWOOLE_WEBSOCKET_STATUS_CLOSING') or define('SWOOLE_WEBSOCKET_STATUS_CLOSING', 4);
 
 // todo get meaning
 defined('SWOOLE_WEBSOCKET_OPCODE_CONTINUATION') or define('SWOOLE_WEBSOCKET_OPCODE_CONTINUATION', 0);
 
-// todo get meaning
+// websocket UTF-8 文本字符数据
 defined('SWOOLE_WEBSOCKET_OPCODE_TEXT') or define('SWOOLE_WEBSOCKET_OPCODE_TEXT', 1);
 
-// todo get meaning
+//  websocket 二进制数据
 defined('SWOOLE_WEBSOCKET_OPCODE_BINARY') or define('SWOOLE_WEBSOCKET_OPCODE_BINARY', 2);
 
 // todo get meaning
 defined('SWOOLE_WEBSOCKET_OPCODE_CLOSE') or define('SWOOLE_WEBSOCKET_OPCODE_CLOSE', 8);
 
-// todo get meaning
+// websocket ping 类型数据
 defined('SWOOLE_WEBSOCKET_OPCODE_PING') or define('SWOOLE_WEBSOCKET_OPCODE_PING', 9);
 
 // todo get meaning

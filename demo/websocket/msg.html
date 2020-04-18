@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+<script type="text/javascript">
+    let serv = "ws://172.16.37.128:9501";
+    let ws = new WebSocket(serv);
+    // 连接成功
+    ws.onopen = function (evt) {
+        console.log("connect success");
+        ws.send('你好');
+    };
+    // 连接关闭
+    ws.onclose = function (evt) {
+        console.log("connect close");
+    };
+    // 接收消息
+    ws.onmessage = function (evt) {
+        console.log("receive success : " + evt.data);
+    };
+    // 错误
+    ws.onerror = function (evt, e) {
+        console.log("there is an error!");
+    };
+</script>
+</body>
+</html>

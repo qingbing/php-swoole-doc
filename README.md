@@ -2,7 +2,7 @@
 php-swoole，swoole编码提示api文档
 
 ## 使用说明
-- swoole版本：1.9.9
+- swoole版本：4.4.14
 - 提供php-swoole的各类的外部调用api
 - 将该包加入到php-include文件或直接放入项目中，在编码中可以起到api提示信息的左右
 - 该包仅仅是针对php-swoole中各个类的调用定义，不进入项目编译等
