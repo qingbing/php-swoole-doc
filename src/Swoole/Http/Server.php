@@ -13,30 +13,6 @@ namespace Swoole\Http;
 
 class Server extends \Swoole\Server
 {
-    // todo property
-    public $setting = '???';
-    // todo property
-    public $connections = '???';
-    // todo property
-    public $host = '???';
-    // todo property
-    public $port = '???';
-    // todo property
-    public $type = '???';
-    // todo property
-    public $mode = '???';
-    // todo property
-    public $ports = '???';
-    // todo property
-    public $master_pid = '???';
-    // todo property
-    public $manager_pid = '???';
-    // todo property
-    public $worker_id = '???';
-    // todo property
-    public $taskworker = '???';
-    // todo property
-    public $worker_pid = '???';
     // todo
     public function __construct($host,$port = null,$mode = null,$sock_type = null){}
     // todo

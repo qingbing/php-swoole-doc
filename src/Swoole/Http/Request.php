@@ -13,12 +13,12 @@ namespace Swoole\Http;
 
 class Request
 {
-    // todo property
-    public $fd = '???';
-    // todo property
-    public $header = '???';
-    // todo property
-    public $server = '???';
+    /* @var int 连接标记 */
+    public $fd = 1;
+    /* @var array header头 */
+    public $header = [];
+    /* @var array 服务器信息 */
+    public $server = [];
     // todo property
     public $cookie = '???';
     // todo property
